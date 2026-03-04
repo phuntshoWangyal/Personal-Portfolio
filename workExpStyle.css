@@ -2,7 +2,7 @@
 
 /* ── Work Experience Section ── */
 #contact {
-    background-color: white;
+    background-color: #f7f5f0;
     padding: 80px 24px;
 }
 
@@ -217,7 +217,7 @@
 }
 
 .work-details.details-open {
-    max-height: 300px;
+    max-height: 600px;
     opacity: 1;
 }
 
@@ -273,3 +273,54 @@
 .work-toggle svg { transition: transform 0.35s cubic-bezier(0.4,0,0.2,1); }
 .work-card:hover .work-toggle { color: #6b6860; }
 .work-card.card-open .work-toggle svg { transform: rotate(180deg); }
+
+/* ── Mobile Responsiveness ── */
+@media (max-width: 600px) {
+    #contact {
+        padding: 60px 16px;
+    }
+
+    .work-header {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+
+    .work-header-meta {
+        text-align: left;
+    }
+
+    .work-timeline {
+        padding-left: 20px;
+    }
+
+    .work-job::before {
+        left: -24px;
+    }
+
+    .work-card-body {
+        padding: 18px 16px 14px;
+    }
+
+    .work-card-top {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .work-badge {
+        align-self: flex-start;
+    }
+
+    .work-company {
+        font-size: 20px;
+    }
+
+    .work-details-inner {
+        padding: 14px 16px 18px;
+    }
+
+    .work-detail-list li {
+        grid-template-columns: 24px 1fr;
+        font-size: 12.5px;
+    }
+}
