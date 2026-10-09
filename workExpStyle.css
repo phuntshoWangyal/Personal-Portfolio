@@ -35,7 +35,7 @@
 .work-title em {
     font-style: italic;
     font-weight: 400;
-    color: #6b6860;
+    color: crimson;
 }
 
 .work-header-meta {
@@ -111,9 +111,9 @@
 
 .work-job.job-horizon:hover::before,
 .work-job.job-horizon.job-open::before {
-    border-color: #007a82;
-    background: #007a82;
-    box-shadow: 0 0 8px rgba(0,122,130,0.3);
+    border-color: #c8102e;
+    background: #c8102e;
+    box-shadow: 0 0 8px rgba(200,16,46,0.3);
     transform: scale(1.3);
 }
 
@@ -137,7 +137,7 @@
 .work-job.job-unb .work-card.card-open { border-color: rgba(200,16,46,0.25); }
 
 .work-job.job-horizon .work-card:hover,
-.work-job.job-horizon .work-card.card-open { border-color: rgba(0,122,130,0.25); }
+.work-job.job-horizon .work-card.card-open { border-color: rgba(200,16,46,0.25); }
 
 /* Coloured top bar */
 .work-color-bar {
@@ -148,7 +148,7 @@
 }
 
 .work-job.job-unb .work-color-bar     { background: linear-gradient(90deg, #c8102e, transparent 70%); }
-.work-job.job-horizon .work-color-bar { background: linear-gradient(90deg, #007a82, transparent 70%); }
+.work-job.job-horizon .work-color-bar { background: linear-gradient(90deg, #c8102e, transparent 70%); }
 
 .work-card:hover .work-color-bar,
 .work-card.card-open .work-color-bar { opacity: 1; }
@@ -203,9 +203,9 @@
 
 .work-job.job-horizon .work-card:hover .work-badge,
 .work-job.job-horizon .work-card.card-open .work-badge {
-    color: #007a82;
-    border-color: rgba(0,122,130,0.3);
-    background: rgba(0,122,130,0.05);
+    color: #c8102e;
+    border-color: rgba(200,16,46,0.3);
+    background: rgba(200,16,46,0.05);
 }
 
 /* Expandable details */
@@ -254,7 +254,7 @@
 }
 
 .work-job.job-unb .work-detail-list li .work-num  { color: #c8102e; }
-.work-job.job-horizon .work-detail-list li .work-num { color: #007a82; }
+.work-job.job-horizon .work-detail-list li .work-num { color: #c8102e; }
 
 /* Toggle hint */
 .work-toggle {
