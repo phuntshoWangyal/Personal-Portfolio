@@ -16,7 +16,17 @@ a{
 #nav {
 
     transition: .5s ease background-color;
-    
+
+}
+#nav.scrolled {
+    background-color: black;
+}
+/* Photo fills the background below 1200px, so keep the nav readable over it */
+@media (max-width: 1199.98px) {
+    #nav:not(.scrolled) {
+        background-color: rgba(0, 0, 0, 0.55);
+        backdrop-filter: blur(6px);
+    }
 }
 #title {
     color: white;
@@ -1013,6 +1023,30 @@ img {
     #start .start {
       top: 85%;
       padding: 1.5rem;
+    }
+  }
+
+/* Phones: hide the profile photo and center the intro text */
+@media (max-width: 600px) {
+    #start {
+      background-image: none;
+      justify-content: center;
+    }
+
+    #start::after {
+      display: none;
+    }
+
+    #start .start {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+    }
+
+    #start h1 {
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   
